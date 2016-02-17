@@ -3,7 +3,10 @@
 <h3>Dale!</h3>
 </header><!-- /header -->
 <main>
+<% @videos.each do |video| %>
   <article>
-  Video goes here!
+   <h4><%= link_to video.title, video.youtube_link %></h4>
+   <%= raw video.embed %>
   </article>
+  <% end %>
 </main>
