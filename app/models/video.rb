@@ -1,5 +1,4 @@
 class Video < ActiveRecord::Base
-
   def youtube_link
     "https://youtu.be/#{self.embed_url}"
   end
