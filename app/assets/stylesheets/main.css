@@ -1,6 +1,8 @@
 body {
   font-size: 14px;
+  text-align: center;
 }
+
 
 h1,
 h3 {
@@ -13,6 +15,13 @@ h3 {
 }
 
 article {
-  border: 1px solid red;
+  border: 1px solid seagreen;
   padding: 1rem;
+  border-radius: 12%;
+}
+
+nav {
+  text-align: center;
+  color: blue;
+  font-size: 20px;
 }
