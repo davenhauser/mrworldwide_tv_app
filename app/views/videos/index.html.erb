@@ -1,6 +1,6 @@
 
 <main>
-<% @videos.each do |video| %>
+<% @videos.order("created_at desc").each do |video| %>
   <article>
    <h4><%= link_to video.title, video.youtube_link %></h4>
 
@@ -8,9 +8,9 @@
    <%=raw video.embed %>
   </div>
    <ul>
-     <li> <%= link_to "View Video", video_path(video)%></li>
-     <li>  <%= link_to "Edit Video", edit_video_path(video) %></li>
-     <li>  <%= link_to "Delete this video", video_path(video), method: :delete, data: { confirm:
+     <li> <%= link_to "View video", video_path(video)%></li>
+     <li>  <%= link_to "Edit Video", "/videos/#{video.id}/edit" %></li>
+     <li>  <%= link_to "Delete this video", "/videos/#{video.id}", method: :delete, data: { confirm:
       "Are you sure you want to delete this video?"} %></li>
    </ul>
   </article>

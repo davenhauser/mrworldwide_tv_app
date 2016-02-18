@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   root "videos#index"
 
+  #resources :videos --> replaces all the below
+
+  #resources :videos, only: [:index, :new, :create, :edit, :update]
+
   get "/videos" => "videos#index"
   get "/videos/new" => "videos#new"
   post "/videos" => "videos#create"

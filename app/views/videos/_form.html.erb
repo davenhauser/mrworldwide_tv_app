@@ -1,0 +1,24 @@
+
+<%= form_for @video do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title%>
+  <br>
+  <%= f.label :released_on %>
+  <%= f.date_select :released_on %>
+  <br>
+  <%= f.label :embed_url, "Youtube Id" %>
+  <%= f.text_field :embed_url%>
+  <br>
+  <%= f.label :tags %>
+  <%= f.text_field :tags %>
+
+  <%= f.submit "Edit!" %>
+  <% end %>
+
+<ul>
+
+  <% @video.errors.full_messages.each do |message|%>
+   <li> <%= message%></li>
+  <% end %>
+</ul>
+
