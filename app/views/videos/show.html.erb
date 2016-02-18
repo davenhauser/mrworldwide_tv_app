@@ -1,0 +1,10 @@
+<%= Video.name%>
+
+<main>
+
+  <article>
+   <h4><%= link_to @video.title, @video.youtube_link %></h4>
+   <%= raw @video.embed %>
+  </article>
+
+</main>

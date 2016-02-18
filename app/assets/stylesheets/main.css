@@ -1,6 +1,7 @@
 body {
   font-size: 14px;
   text-align: center;
+  background-color: SeaShell;
 }
 
 
@@ -15,7 +16,7 @@ h3 {
 }
 
 article {
-  border: 1px solid seagreen;
+  border: 1px solid none;
   padding: 1rem;
   border-radius: 12%;
 }
@@ -25,3 +26,7 @@ nav {
   color: blue;
   font-size: 20px;
 }
+
+.embed_div {
+  border: 1px solid none;
+  border-radius: 15%;
